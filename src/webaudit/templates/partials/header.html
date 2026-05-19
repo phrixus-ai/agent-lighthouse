@@ -1,0 +1,38 @@
+<!-- Header -->
+<header class="header" id="header">
+    <div class="header-inner">
+        <div class="header-left">
+            <a class="header-logo" href="/">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" stroke="#ff6b2b" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M12 8l4 2.5v5L12 18l-4-2.5v-5L12 8z" fill="#ff6b2b" opacity="0.3"/>
+                    <circle cx="12" cy="13" r="2" fill="#ff6b2b"/>
+                </svg>
+                AgentLighthouse
+            </a>
+            <span class="header-tag">v0.3.0</span>
+        </div>
+        <!-- Search bar — hidden initially, visible after first audit -->
+        <nav class="header-search" id="headerSearch" aria-label="Quick audit">
+            <div class="url-wrap">
+                <span class="url-prefix">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                        <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1"/>
+                        <path d="M1.5 8h13M8 1.5c-2 2-2 9 0 13M8 1.5c2 2 2 9 0 13" stroke="currentColor" stroke-width="1"/>
+                    </svg>
+                </span>
+                <input type="text" id="urlInputBar" placeholder="example.com" autocomplete="off" spellcheck="false" aria-label="Website URL to audit">
+                <button type="button" class="history-btn" id="historyBtnBar" title="Recent scans" aria-label="Recent scans">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                </button>
+                <div class="history-dropdown" id="historyDropdownBar"></div>
+            </div>
+            <button class="btn-scan" id="auditBtnBar">Audit</button>
+        </nav>
+        <div class="header-right" id="headerRight">
+            AI &amp; Agent Readiness Scanner
+        </div>
+    </div>
+</header>
